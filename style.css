@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+/*---- Header section---- */
 .header{
     min-height: 100vh; /*vh = viewport height */
     width: 100%;
@@ -106,5 +107,155 @@ nav h3{
     transition: 1s;
 }
 
+/* ----About Section---- */
+.row{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
 
+.About-me{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.About-me h1{
+    text-decoration: underline;
+}
+
+.about-me-column{
+    flex-basis: 45%;
+    border-radius: 10px;
+    margin-bottom: 4%;
+}
+
+.about-me-column img{
+    width: 70%;
+    border-radius: 50%;
+}
+
+.about-me-column h2{
+    margin-top: 14px;
+    margin-bottom: 14px;
+    text-align: left;
+}
+
+.about-me-column p{
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 10px;
+    text-align: left;
+}
+
+/* ----My skill section---- */
+
+.my-skill{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background: #f7e9ea;
+    padding-top: 100px;
+}
+
+.my-skill h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+skills-column{
+    flex-basis: 45%;
+    border-radius: 10px;
+    margin-bottom: 4%;
+}
+
+.skills-column h2{
+    margin-bottom: 15px;
+    text-align: left;
+    padding: 12px;
+}
+
+.skills-column p{
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 12px;
+    text-align: left;
+}
+.skills-column li{
+    list-style: none;
+    margin-top: 20px 0;
+}
+
+.skills-column .scrollbar{
+    display: block;
+    height: 2px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #D4DEF2;
+}
+
+.skills-column .scrollbar span{
+    height: 3px;
+    float: left;
+    background: black;
+}
+
+.html{
+    width: 90%;
+    animation: html 2s;
+}
+.css{
+    width: 60%;
+    animation: css 2s;
+}
+.jQuery{
+    width: 50%;
+    animation: jQuery 2s;
+}
+.JavaScript{
+    width: 70%;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+        animation: javaScript 2s;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+@keyframes jQuery{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes JavaScript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
 
